@@ -1,0 +1,804 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Material Design theme for MkDocs">
+      
+      
+        <link rel="canonical" href="https://github.com/fikrinasrullah/170441100004/pohonkeputusan/implementasi/">
+      
+      
+        <meta name="author" content="Martin Donath">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/a.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Implementasi - Fikri Nasrulloh</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.750b69bd.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#implementasi-pohon-keputusan-menggunakan-python" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/fikrinasrullah/170441100004" title="Fikri Nasrulloh" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Fikri Nasrulloh
+            </span>
+            <span class="md-header-nav__topic">
+              Implementasi
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/fikrinasrullah/170441100004" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    fikrinasrullah
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Introduction" class="md-tabs__link">
+        Introduction
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Knn/getting-started/" title="Knn" class="md-tabs__link">
+          Knn
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../pengertian/" title="Pohon Keputusan" class="md-tabs__link md-tabs__link--active">
+          Pohon Keputusan
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://github.com/fikrinasrullah/170441100004" title="Fikri Nasrulloh" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Fikri Nasrulloh
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/fikrinasrullah/170441100004" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    fikrinasrullah
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Knn
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Knn
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Knn/getting-started/" title="Klasifikasi" class="md-nav__link">
+      Klasifikasi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Knn/specimen/" title="Klasifikasi dengan KNN" class="md-nav__link">
+      Klasifikasi dengan KNN
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Knn/customization/" title="Implementasi" class="md-nav__link">
+      Implementasi
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Pohon Keputusan
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Pohon Keputusan
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pengertian/" title="Klasifikasi dengan Pohon keputusan" class="md-nav__link">
+      Klasifikasi dengan Pohon keputusan
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../algoritma/" title="Algoritma C 4.5 dalam Pohon Keputusan" class="md-nav__link">
+      Algoritma C 4.5 dalam Pohon Keputusan
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Implementasi
+      </label>
+    
+    <a href="./" title="Implementasi" class="md-nav__link md-nav__link--active">
+      Implementasi
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-persiapan" title="1. Persiapan" class="md-nav__link">
+    1. Persiapan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-import-package-yang-diperlukan" title="2. Import package yang diperlukan" class="md-nav__link">
+    2. Import package yang diperlukan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-load-data" title="3. Load data" class="md-nav__link">
+    3. Load data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-seleksi-fitur" title="4. Seleksi Fitur" class="md-nav__link">
+    4. Seleksi Fitur
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-split-data" title="5. Split data" class="md-nav__link">
+    5. Split data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-membuat-model-pohon-keputusan" title="6. Membuat Model Pohon keputusan" class="md-nav__link">
+    6. Membuat Model Pohon keputusan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-visualisasi-pohon-keputusan" title="7. Visualisasi Pohon Keputusan" class="md-nav__link">
+    7. Visualisasi Pohon Keputusan
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#referensi" title="Referensi :" class="md-nav__link">
+    Referensi :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-persiapan" title="1. Persiapan" class="md-nav__link">
+    1. Persiapan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-import-package-yang-diperlukan" title="2. Import package yang diperlukan" class="md-nav__link">
+    2. Import package yang diperlukan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-load-data" title="3. Load data" class="md-nav__link">
+    3. Load data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-seleksi-fitur" title="4. Seleksi Fitur" class="md-nav__link">
+    4. Seleksi Fitur
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-split-data" title="5. Split data" class="md-nav__link">
+    5. Split data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-membuat-model-pohon-keputusan" title="6. Membuat Model Pohon keputusan" class="md-nav__link">
+    6. Membuat Model Pohon keputusan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-visualisasi-pohon-keputusan" title="7. Visualisasi Pohon Keputusan" class="md-nav__link">
+    7. Visualisasi Pohon Keputusan
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#referensi" title="Referensi :" class="md-nav__link">
+    Referensi :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="implementasi-pohon-keputusan-menggunakan-python">Implementasi Pohon Keputusan Menggunakan Python<a class="headerlink" href="#implementasi-pohon-keputusan-menggunakan-python" title="Permanent link">&para;</a></h1>
+<h2 id="1-persiapan">1. Persiapan<a class="headerlink" href="#1-persiapan" title="Permanent link">&para;</a></h2>
+<p>Download dataset dahulu menggunakan link dibawah ini :</p>
+<p><a href="https://github.com/fikrinasrullah/170441100004/blob/master/dataset diabetes for decision tree.rar">disini</a></p>
+<p>Selanjutnya siapkan package yang diperlukan dibawah ini :</p>
+<ul>
+<li>Python 3.7</li>
+<li>Spyder 3.3.2</li>
+<li>Numpy</li>
+<li>Pandas</li>
+<li>Scikit Learn</li>
+<li>graphviz</li>
+<li>pydotplus</li>
+</ul>
+<h2 id="2-import-package-yang-diperlukan">2. Import package yang diperlukan<a class="headerlink" href="#2-import-package-yang-diperlukan" title="Permanent link">&para;</a></h2>
+<p>Setelah semua package yang dibutuhlan telah terdownload, import ke dalam Spyder seperti code dibawah ini :</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span> 
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span> 
+<span class="kn">from</span> <span class="nn">sklearn.externals.six</span> <span class="kn">import</span> <span class="n">StringIO</span>  
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>  
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">export_graphviz</span>
+<span class="kn">import</span> <span class="nn">pydotplus</span>
+</pre></div>
+
+<h2 id="3-load-data">3. Load data<a class="headerlink" href="#3-load-data" title="Permanent link">&para;</a></h2>
+<p>Load data yang sudah didownload tadi, usahakan satu folder dengan file yang akan dibuat ini:</p>
+<div class="codehilite"><pre><span></span><span class="n">col_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pregnant&#39;</span><span class="p">,</span> <span class="s1">&#39;glucose&#39;</span><span class="p">,</span> <span class="s1">&#39;bp&#39;</span><span class="p">,</span> <span class="s1">&#39;skin&#39;</span><span class="p">,</span> <span class="s1">&#39;insulin&#39;</span><span class="p">,</span> <span class="s1">&#39;bmi&#39;</span><span class="p">,</span> <span class="s1">&#39;pedigree&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">]</span>
+<span class="c1"># load dataset</span>
+<span class="n">pima</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;diabetes1,csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="n">col_names</span><span class="p">)</span>
+</pre></div>
+
+<p>Output </p>
+<div class="codehilite"><pre><span></span>   <span class="n">pregnant</span>  <span class="n">glucose</span>  <span class="n">bp</span>  <span class="n">skin</span>  <span class="n">insulin</span>   <span class="n">bmi</span>  <span class="n">pedigree</span>  <span class="n">age</span>  <span class="n">label</span>
+<span class="mi">0</span>         <span class="mi">6</span>      <span class="mi">148</span>  <span class="mi">72</span>    <span class="mi">35</span>        <span class="mi">0</span>  <span class="mf">33.6</span>     <span class="mf">0.627</span>   <span class="mi">50</span>      <span class="mi">1</span>
+<span class="mi">1</span>         <span class="mi">1</span>       <span class="mi">85</span>  <span class="mi">66</span>    <span class="mi">29</span>        <span class="mi">0</span>  <span class="mf">26.6</span>     <span class="mf">0.351</span>   <span class="mi">31</span>      <span class="mi">0</span>
+<span class="mi">2</span>         <span class="mi">8</span>      <span class="mi">183</span>  <span class="mi">64</span>     <span class="mi">0</span>        <span class="mi">0</span>  <span class="mf">23.3</span>     <span class="mf">0.672</span>   <span class="mi">32</span>      <span class="mi">1</span>
+<span class="mi">3</span>         <span class="mi">1</span>       <span class="mi">89</span>  <span class="mi">66</span>    <span class="mi">23</span>       <span class="mi">94</span>  <span class="mf">28.1</span>     <span class="mf">0.167</span>   <span class="mi">21</span>      <span class="mi">0</span>
+<span class="mi">4</span>         <span class="mi">0</span>      <span class="mi">137</span>  <span class="mi">40</span>    <span class="mi">35</span>      <span class="mi">168</span>  <span class="mf">43.1</span>     <span class="mf">2.288</span>   <span class="mi">33</span>      <span class="mi">1</span>
+</pre></div>
+
+<h2 id="4-seleksi-fitur">4. Seleksi Fitur<a class="headerlink" href="#4-seleksi-fitur" title="Permanent link">&para;</a></h2>
+<p>Dalam step ini, perlu pembagian fitur. Untuk variabel X digunakan untuk fitur dan variabel Y digunakan untuk target.</p>
+<div class="codehilite"><pre><span></span><span class="n">feature_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pregnant&#39;</span><span class="p">,</span> <span class="s1">&#39;insulin&#39;</span><span class="p">,</span> <span class="s1">&#39;bmi&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">,</span><span class="s1">&#39;glucose&#39;</span><span class="p">,</span><span class="s1">&#39;bp&#39;</span><span class="p">,</span><span class="s1">&#39;pedigree&#39;</span><span class="p">]</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">pima</span><span class="p">[</span><span class="n">feature_cols</span><span class="p">]</span> <span class="c1"># fitur</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">pima</span><span class="o">.</span><span class="n">label</span> <span class="c1"># target</span>
+</pre></div>
+
+<h2 id="5-split-data">5. Split data<a class="headerlink" href="#5-split-data" title="Permanent link">&para;</a></h2>
+<p>Selanjutnya split data menjadi 2 untuk data test dan data train</p>
+<div class="codehilite"><pre><span></span><span class="c1">#split data : 30% data test, 70% data train</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+<h2 id="6-membuat-model-pohon-keputusan">6. Membuat Model Pohon keputusan<a class="headerlink" href="#6-membuat-model-pohon-keputusan" title="Permanent link">&para;</a></h2>
+<p>Gunakan package Scikit-learn untuk permodelan pohon keputusan</p>
+<div class="codehilite"><pre><span></span><span class="c1"># untuk klasifikasi objek</span>
+<span class="n">clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">criterion</span><span class="o">=</span><span class="s2">&quot;entropy&quot;</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># untuk train pohon keputusan</span>
+<span class="n">clf</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1">#untuk prediksi data yg diuji</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1">#menampilkan akurasi</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Accuracy:&quot;</span><span class="p">,</span><span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+</pre></div>
+
+<p>output akurasi</p>
+<div class="codehilite"><pre><span></span><span class="n">Accuracy</span><span class="p">:</span> <span class="mf">0.7705627705627706</span>
+</pre></div>
+
+<h2 id="7-visualisasi-pohon-keputusan">7. Visualisasi Pohon Keputusan<a class="headerlink" href="#7-visualisasi-pohon-keputusan" title="Permanent link">&para;</a></h2>
+<p>Visualisasi data menggunakan code berikut </p>
+<div class="codehilite"><pre><span></span><span class="n">dot_data</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span>
+<span class="n">export_graphviz</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="n">dot_data</span><span class="p">,</span>  
+                <span class="n">filled</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">rounded</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                <span class="n">special_characters</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">feature_names</span> <span class="o">=</span> <span class="n">feature_cols</span><span class="p">,</span><span class="n">class_names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">])</span>
+<span class="n">graph</span> <span class="o">=</span> <span class="n">pydotplus</span><span class="o">.</span><span class="n">graph_from_dot_data</span><span class="p">(</span><span class="n">dot_data</span><span class="o">.</span><span class="n">getvalue</span><span class="p">())</span>  
+<span class="n">graph</span><span class="o">.</span><span class="n">write_png</span><span class="p">(</span><span class="s1">&#39;diabetes.png&#39;</span><span class="p">)</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">graph</span><span class="o">.</span><span class="n">create_png</span><span class="p">())</span>
+</pre></div>
+
+<p>Output</p>
+<p><img alt="" src="https://github.com/fikrinasrullah/170441100004/blob/master/diabetes.png?raw=true" /></p>
+<h3 id="referensi">Referensi :<a class="headerlink" href="#referensi" title="Permanent link">&para;</a></h3>
+<p><a href="https://medium.com/machine-learning-101/chapter-3-decision-trees-theory-e7398adac567">https://medium.com/machine-learning-101/chapter-3-decision-trees-theory-e7398adac567</a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../algoritma/" title="Algoritma C 4.5 dalam Pohon Keputusan" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Algoritma C 4.5 dalam Pohon Keputusan
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2019 Martin Donath edit by Fikri Nasrulloh
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/fikrinasrullah" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://www.instagram.com/mf_nasrullah/?hl=id" class="md-footer-social__link fa fa-instagram"></a>
+    
+      <a href="https://www.facebook.com/fikri.nasrullah23" class="md-footer-social__link fa fa-facebook"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.8c0d971c.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
